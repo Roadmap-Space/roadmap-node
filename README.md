@@ -10,7 +10,7 @@ Official Node.js API client library for [Roadmap](https://roadmap.space)'s API.
 ## Installation
 
 ```shell
-npm install roadmap --save
+npm install roadmap-node --save
 ```
 
 ## Documentation
