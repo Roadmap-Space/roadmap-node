@@ -1,0 +1,38 @@
+{
+	"name": "roadmap",
+	"version": "1.2.0",
+	"description": "Roadmap API wrapper",
+	"keywords": [
+		"roadmap",
+		"user feedback",
+		"product roadmap",
+		"api"
+	],
+	"homepage": "https://github.com/roadmap-space/roadmap-node",
+	"author": "Roadmap <support@roadmap.space> (https://stripe.com/)",
+	"contributors": [
+		"Dominic St-Pierre <dominicstpierre@gmail.com> (https://dominicstpierre.com/)"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/roadmap-space/roadmap-node.git"
+	},
+	"bugs:": "https://github.com/roadmap-space/roadmap-node/issues",
+	"engines": {
+		"node": ">= v0.10.0"
+	},
+	"main": "lib/roadmap.js",
+	"devDependencies": {
+		"@types/superagent": "^2.0.35"
+	},
+	"dependencies": {
+		"superagent": "^2.3.0"
+	},
+	"license": "MIT",
+	"scripts": {
+		"mocha": "mocha",
+		"test": "npm run lint && mocha",
+		"lint": "jscs ."
+	},
+	"types": "./lib/roadmap.d.ts"
+}
