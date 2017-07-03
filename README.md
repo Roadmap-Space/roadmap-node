@@ -22,7 +22,7 @@ Here is some examples:
 ### Get an item
 
 ```javascript
-import { Init } from "roadmap";
+import { Init } from "roadmap-node";
 
 let roadmap = new Init("email", "token");
 roadmap.Items.getById("id", function(err, item) { console.log(item.title)});
