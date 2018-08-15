@@ -21,7 +21,7 @@ export declare class Ideas extends Model {
     constructor();
     add(idea: IItem, cb: (err: any, result?: IItem) => void, limitReached: () => void): void;
     getById(id: string, cb: (err: any, result?: IItem) => void): void;
-    list(roadmapId: string, filter: string, cb: (err: any, result?: Array<IItem>) => void): void;
+    list(roadmapId: string, filter: string, cb: (err: any, result?: IItem[]) => void): void;
     toWidget(id: string, roadmapId: string, cb: (err: any, result?: boolean) => void): void;
     toIdea(id: string, roadmapId: string, cb: (err: any, result?: boolean) => void): void;
     save(idea: IItem, cb: (err: any, result?: IItem) => void): void;

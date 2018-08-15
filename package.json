@@ -24,15 +24,17 @@
 	"main": "lib/roadmap.js",
 	"devDependencies": {
 		"@types/superagent": "^2.0.35"
+		"tslint": "^5.11.0",
+		"tslint-config-airbnb": "^5.9.2",
+		"typescript": "^3.0.1"
 	},
 	"dependencies": {
 		"superagent": "^2.3.0"
 	},
 	"license": "MIT",
 	"scripts": {
-		"mocha": "mocha",
-		"test": "npm run lint && mocha",
-		"lint": "jscs ."
+		"build": "tsc",
+		"lint": "tslint --project ."
 	},
 	"types": "./lib/roadmap.d.ts"
 }

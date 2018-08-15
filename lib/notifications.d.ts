@@ -16,7 +16,7 @@ export declare class Notifications extends Model {
         storyStatusChanged: string;
         ideaCompleted: string;
     };
-    getFeed(roadmapId: string, cb: (err: any, results?: Array<INotification>) => void): void;
+    getFeed(roadmapId: string, cb: (err: any, results?: INotification[]) => void): void;
     newCount(roadmapId: string, cb: (err: any, count?: number) => void): void;
     flagAsSeen(roadmapId: string, cb: (err: any, result?: boolean) => void): void;
 }
