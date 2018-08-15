@@ -1,7 +1,7 @@
 # Node library for Roadmap API
 
 API version: v1.2.0
-Library version: v1.2.0
+Library version: v1.2.1
 
 ## Summary
 
