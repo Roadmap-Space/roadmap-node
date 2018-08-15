@@ -10,24 +10,21 @@
 	],
 	"homepage": "https://github.com/roadmap-space/roadmap-node",
 	"author": "Roadmap <support@roadmap.space> (https://stripe.com/)",
-	"contributors": [
-		"Dominic St-Pierre <dominicstpierre@gmail.com> (https://dominicstpierre.com/)"
-	],
 	"repository": {
 		"type": "git",
 		"url": "git://github.com/roadmap-space/roadmap-node.git"
 	},
 	"bugs:": "https://github.com/roadmap-space/roadmap-node/issues",
 	"engines": {
-		"node": ">= v0.10.0"
+		"node": ">= v4.0.0"
 	},
 	"main": "lib/roadmap.js",
 	"devDependencies": {
-		"@types/superagent": "^2.0.35",
+		"@types/superagent": ">=3.7.0",
 		"typescript": "^3.0.1"
 	},
 	"dependencies": {
-		"superagent": "^2.3.0"
+		"superagent": ">=3.7.0"
 	},
 	"license": "MIT",
 	"scripts": {
