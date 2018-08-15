@@ -23,16 +23,15 @@
 	},
 	"main": "lib/roadmap.js",
 	"devDependencies": {
-		"@types/superagent": "^2.0.35"
+		"@types/superagent": "^2.0.35",
+		"typescript": "^3.0.1"
 	},
 	"dependencies": {
 		"superagent": "^2.3.0"
 	},
 	"license": "MIT",
 	"scripts": {
-		"mocha": "mocha",
-		"test": "npm run lint && mocha",
-		"lint": "jscs ."
+		"prepare": "tsc"
 	},
 	"types": "./lib/roadmap.d.ts"
 }
