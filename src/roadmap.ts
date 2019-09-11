@@ -1,3 +1,5 @@
+/// <reference path="./interfaces.d.ts" />
+
 import { AppUsers } from "./appusers";
 import { Feedback } from "./feedback";
 import { Ideas } from "./ideas";
@@ -6,19 +8,26 @@ import { Roadmaps } from "./roadmaps";
 import { Stories } from "./stories";
 import { Subscribers } from "./subscribers";
 
-
-var ROADMAP_API_KEY = "";
-
 export class Init {
-	Users = new AppUsers();
-	Feedback = new Feedback();
-	Ideas = new Ideas();
-	Items = new Items();
-	Roadmaps = new Roadmaps();
-	Stories = new Stories();
-	Subscribers = new Subscribers();
+  private apiKey: string;
 
-	constructor(email: string, token: string) {
-		ROADMAP_API_KEY = new Buffer(email + "|" + token).toString('base64');
-	}
+  public Users;
+  public Feedback;
+  public Ideas;
+  public Items;
+  public Roadmaps;
+  public Stories;
+  public Subscribers;
+
+  constructor(email: string, token: string) {
+    this.apiKey = `${email}:${token}`;
+
+    this.Users = new AppUsers(this.apiKey);
+    this.Feedback = new Feedback(this.apiKey);
+    this.Ideas = new Ideas(this.apiKey);
+    this.Items = new Items(this.apiKey);
+    this.Roadmaps = new Roadmaps(this.apiKey);
+    this.Stories = new Stories(this.apiKey);
+    this.Subscribers = new Subscribers(this.apiKey);
+  }
 }

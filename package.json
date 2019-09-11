@@ -16,15 +16,15 @@
   },
   "bugs:": "https://github.com/roadmap-space/roadmap-node/issues",
   "engines": {
-    "node": ">= v4.0.0"
+    "node": ">=v6.0.0"
   },
   "main": "lib/roadmap.js",
   "devDependencies": {
-    "@types/superagent": ">=3.7.0",
-    "typescript": "^3.0.1"
+    "@types/node": "^12.7.5",
+    "typescript": "^3.6.3"
   },
   "dependencies": {
-    "superagent": ">=3.7.0"
+    "superagent": "^5.1.0"
   },
   "license": "MIT",
   "scripts": {

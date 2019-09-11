@@ -1,7 +1,7 @@
 # Node library for Roadmap API
 
 API version: v1.2.0
-Library version: v1.2.1
+Library version: v1.2.2
 
 ## Summary
 
@@ -24,6 +24,10 @@ Here is some examples:
 ```javascript
 import { Init } from "roadmap-node";
 
-let roadmap = new Init("email", "token");
-roadmap.Items.getById("id", function(err, item) { console.log(item.title)});
+const roadmap = new Init("email", "token");
+const itemId = "id";
+
+roadmap.Items.getById(itemId, function(err, item) {
+  console.log(item.title);
+});
 ```
